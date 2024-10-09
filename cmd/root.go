@@ -11,7 +11,7 @@ var rootCmd = &cobra.Command{
     Use:   "costa-wifi",
     Short: "Manage your Costa Cruise Wifi Connection",
     Run: func(cmd *cobra.Command, args []string) {
-        fmt.Println("Hello from my-cli!")
+        fmt.Println("use: costa-wifi help")
     },
 }
 
@@ -20,8 +20,4 @@ func Execute() {
         fmt.Println(err)
         os.Exit(1)
     }
-}
-
-func init() {
-    // Here you will define your flags and configuration settings
 }
