@@ -32,23 +32,9 @@ func Login(costaNumber, birthDate string) (*LoginResponse, error) {
 	if err != nil {
 		return nil, fmt.Errorf("error creating request: %w", err)
 	}
-
-	req.Header.Set("Accept", "application/json")
-	req.Header.Set("Accept-Language", "en-US,pt-BR;q=0.7,en;q=0.3")
 	req.Header.Set("Authorization", BasicAuth)
-	req.Header.Set("Cache-Control", "no-cache")
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
 	req.Header.Set("DNT", "1")
-	req.Header.Set("Host", "mobileapp.api.costa.it")
-	req.Header.Set("Origin", "https://mobileapp.aem.costa.it")
-	req.Header.Set("Pragma", "no-cache")
-	req.Header.Set("Priority", "u=4")
-	req.Header.Set("Referer", "https://mobileapp.aem.costa.it/")
-	req.Header.Set("Sec-Fetch-Dest", "empty")
-	req.Header.Set("Sec-Fetch-Mode", "cors")
-	req.Header.Set("Sec-Fetch-Site", "same-site")
-	req.Header.Set("Sec-GPC", "1")
-	req.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:130.0) Gecko/20100101 Firefox/130.0")
 
 	client := &http.Client{}
 	resp, err := client.Do(req)

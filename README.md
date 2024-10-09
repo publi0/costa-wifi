@@ -79,7 +79,6 @@ This project uses the following main dependencies:
 
 - github.com/spf13/cobra: For creating powerful modern CLI applications
 - github.com/pterm/pterm: For beautiful console output
-- github.com/goccy/go-yaml: For YAML support
 - github.com/golang-jwt/jwt/v4: For JWT token handling
 
 ## Disclaimer
