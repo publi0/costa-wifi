@@ -12,13 +12,41 @@ Costa WiFi CLI is a command-line interface tool for managing your Costa Cruise W
 
 ## Installation
 
-To install Costa WiFi CLI, you need to have Go installed on your system. Then, you can clone the repository and build the project:
+There are two ways to install Costa WiFi CLI:
+
+### Option 1: Using `go install`
+
+If you have Go installed on your system, you can use the `go install` command to quickly install Costa WiFi CLI:
+
+```bash
+go install github.com/publi0/costa-wifi@latest
+```
+
+This will install the latest version of Costa WiFi CLI. After installation, make sure your Go bin directory is in your system's PATH.
+
+### Option 2: Building from source
+
+To build from source, you need to have Go installed on your system. Then, you can clone the repository and build the project:
 
 ```bash
 git clone https://github.com/publi0/costa-wifi.git
 cd costa-wifi
 go build
 ```
+
+After building, you can run the CLI tool using:
+
+```bash
+./costa-wifi [command]
+```
+
+If you want to install it system-wide after building from source, you can use:
+
+```bash
+go install
+```
+
+This will install the `costa-wifi` binary in your Go bin directory.
 
 ## Usage
 
