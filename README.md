@@ -10,6 +10,9 @@ Costa WiFi CLI is a command-line interface tool for managing your Costa Cruise W
 - View active WiFi sessions
 - Get version information
 
+<img width="675" alt="image" src="https://github.com/user-attachments/assets/2d037e17-c736-4353-8dc3-1ac95c458fa3">
+
+
 ## Installation
 
 There are two ways to install Costa WiFi CLI:
